@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <script type="text/javascript">
+        let numero = 0
+        let x = 0
+        let y = 0
+        let resultado = 0
+        let resultado2 = 0
+        let resultado3 = 0
+        let resultado4 = 0
+        let resultado5 = 0
+        let resultado6 = 0
+        let resultado7 = 0
+        let resultado8 = 0
+        let resultado9 = 0
+        let resultado10 = 0
+        let min = 0
+        let max = 0
+
+
+        function aleatorio(min, max) {
+            return Math.floor(Math.random() * (max - min + 1) + min)
+        }
+
+        numero = prompt('elije el ejercicio que quieres hacer 1 para suma, 2 para raiz, 3 para 10 numero random, ')
+        if (numero == 1) {
+            if (x == 0, y == 0) {
+                alert("primero defina los 2 valores que va a sumar x e y")
+            } else {
+                resultado = x + y;
+                paso1();
+            }
+        } else if (numero == 2) {
+            x = prompt("ponga el numero al que le sacara la raiz este sera el resultado 1")
+            resultado = Math.sqrt(x)
+            y = prompt("ponga el numero al que le sacara la raiz este sera el resultado 2")
+            resultado2 = Math.sqrt(y)
+            paso2()
+        } else if (numero == 3) {
+            min = prompt('elije un numero minimo')
+            max = prompt('Elije un numero maximo')
+            resultado = aleatorio(min, max)
+            resultado2 = aleatorio(min, max)
+            resultado3 = aleatorio(min, max)
+            resultado4 = aleatorio(min, max)
+            resultado5 = aleatorio(min, max)
+            resultado6 = aleatorio(min, max)
+            resultado7 = aleatorio(min, max)
+            resultado8 = aleatorio(min, max)
+            resultado9 = aleatorio(min, max)
+            resultado10 = aleatorio(min, max)
+        }
+
+        function menu(numero) {
+            if (numero == 1) {
+                if (x == 0, y == 0) {
+                    alert("primero defina los 2 valores que va a sumar x e y")
+                    resultado = x + y;
+
+                } else {
+                    paso1();
+                }
+            } else if (numero == 2) {
+                x = prompt("ponga el numero al que le sacara la raiz este sera el resultado 1")
+                resultado = Math.sqrt(x)
+                y = prompt("ponga el numero al que le sacara la raiz este sera el resultado 2")
+                resultado2 = Math.sqrt(y)
+                paso2()
+            } else if (numero == 3) {
+                min = prompt('elije un numero minimo')
+                max = prompt('Elije un numero maximo')
+                resultado = aleatorio(min, max)
+                resultado2 = aleatorio(min, max)
+                resultado3 = aleatorio(min, max)
+                resultado4 = aleatorio(min, max)
+                resultado5 = aleatorio(min, max)
+                resultado6 = aleatorio(min, max)
+                resultado7 = aleatorio(min, max)
+                resultado8 = aleatorio(min, max)
+                resultado9 = aleatorio(min, max)
+                resultado10 = aleatorio(min, max)
+                paso3()
+            } else if (numero == 4) {
+                paso4()
+            } else if (numero == 5) {
+                paso5()
+            } else {
+                alert('opcion no valida')
+            }
+        }
+
+        function paso1() {
+            alert('el resultado de su suma es :' + resultado);
+        }
+
+        function paso2() {
+            alert('el resultado de la raiz de ' + x + ' es : ' + resultado);
+            alert('el resultado de la raiz de ' + y + ' es : ' + resultado2);
+        }
+
+        function paso3() {
+            alert('sus 10 numeros ramdom son: ' + resultado + "," + resultado2 + "," + resultado3 + "," + resultado4 + "," + resultado5 + "," + resultado6 + "," + resultado7 + "," + resultado8 + "," + resultado9 + "," + resultado10)
+        }
+
+        function paso4() {
+            alert('esto es error')
+        }
+
+        function paso5() {
+            alert('actividad 5')
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
